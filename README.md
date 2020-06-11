@@ -20,11 +20,11 @@ Posteriormente, debe configurarse la base de datos. Esto se realiza por línea d
 
 > heroku login -i
 >
-> heroku addons:create mongolab -a <nombre-app>
+> heroku addons:create mongolab -a nombre-app
 
 De esta manera se ha creado una base de datos de MongoDB y se ha vinculado a la aplicación creada. Seguidamente, hay que rellenar la base de datos. Con el siguiente comando se obtiene la URI de la base de datos:
 
-> heroku config:get MONGODB_URI -a <nombre-app>
+> heroku config:get MONGODB_URI -a nombre-app
 
 Será una URI del siguiente formato:
 
