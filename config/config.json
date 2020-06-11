@@ -1,5 +1,4 @@
 {
-  "mongodburl":"mongodb://mongodb:27017/etsii",
   "jwtTokenSecret":"meMolaMuchoEstudiarEnLaETSII",
   "jwtTokenTTLInSecons": 3600,
   "jwtTimeJitterInSeconds":60,

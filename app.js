@@ -6,6 +6,7 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 const fs = require('fs');
 const helmet = require('helmet');
+const mongodburl = process.env.MONGODB_URI;
 
 var app = express();
 
@@ -23,7 +24,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 // MongoDB Setup
-mongoose.connect(config.mongodburl);
+mongoose.connect(mongodburl);
 
 // Logger Setup
 app.use(logger('dev'));
